@@ -1,0 +1,14 @@
+.cart-img{
+    height: 2vw;
+}
+.cart-remove{
+    cursor: pointer;
+}
+.cart-btn{
+    background-color: var(--tomato);
+    border: none;
+}
+.empty-cart{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

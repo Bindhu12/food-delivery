@@ -1,0 +1,17 @@
+.company-menu{
+    list-style: none;
+}
+.fooder-title{
+    color: var(--tomato);
+}
+@media screen and (max-width:576px) {
+    .mobile-view-footer{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+/* .footer-position{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+} */

@@ -1,0 +1,11 @@
+@media screen and (max-width:576px) {
+    .mobile-view{
+        display: none;
+    }
+}
+.icon{
+    cursor: pointer;
+}
+/* .img-size{
+    width: 50vw;
+} */

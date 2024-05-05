@@ -1,0 +1,17 @@
+.card-info{
+    border-radius: 15px;
+}
+.card-title{
+    font-size: 2rem;
+}
+.desc{
+    max-width: 90%;
+    position: absolute;
+    bottom:20%;
+    left: 8%;
+}
+@media screen and (max-width:576px) {
+    .mobile-view{
+        display: none;
+    }
+}
