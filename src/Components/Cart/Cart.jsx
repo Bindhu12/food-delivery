@@ -16,7 +16,8 @@ function Cart() {
   const dispatch=useDispatch();
 
   const handleRemove=(index)=>{
-    const updatedCart=[...addedItems].splice(index,1);
+    const updatedCart=[...addedItems];
+    updatedCart.splice(index,1);
     dispatch(updateFoodItems(updatedCart))
   }
   return (
@@ -39,7 +40,7 @@ function Cart() {
               addedItems.map((item,index) => {
                 
                 return <tr>
-                  <td><img src={item.image} className='cart-img' /></td>
+                  <td><img src={item.image} className='cart-img' alt='cartItem'/></td>
                   <td>{item.name}</td>
                   <td>${item.price}</td>
                   <td>{item.quantity}</td>
@@ -59,7 +60,7 @@ function Cart() {
           </Row>      
       </div>:
       <div className='text-center empty-cart'>
-        Your Cart is Empty! Please add food...
+        Your Cart is Empty! Please <a href="/home">add food here</a>
       </div>
       }
     </div>

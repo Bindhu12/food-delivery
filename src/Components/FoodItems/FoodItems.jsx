@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './FoodItems.css';
 import { food_list } from '../../Assets/assets';
-import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -61,7 +60,7 @@ function FoodItems({ menu }) {
   }
 
   return (
-    <Container fluid>
+    <Container fluid id='food-display'>
       <Row>
         {
           food_list.map(foodItem => {

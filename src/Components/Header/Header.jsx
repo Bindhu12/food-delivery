@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
-import Nav from 'react-bootstrap/Nav';
+import { FaShoppingCart } from "react-icons/fa";
 import NavBar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
@@ -16,6 +15,7 @@ function Header() {
     const [showNav, setShowNav] = useState(false);
     const [showModal, setShowModal]=useState(false);
     const isLoggedIn=useSelector(state=>state.userDet.isLoggedIn);
+    const addedItems = useSelector((state) => state.foodVarieties.foodItems);
     
     return (
         <header className='container-fluid header-position'>
@@ -25,7 +25,7 @@ function Header() {
                     <NavBar.Brand className='nav-color hide-nav-big'>Hungry Basket</NavBar.Brand>
                     <NavMenu showNav={showNav} />
                     <NavBar.Text>
-                        <Link to="/cart"><FaShoppingCart className='me-3 icon-cursor' /></Link>
+                        <Link to="/cart"><FaShoppingCart color={addedItems.length>0?'red':'black'} className='me-3 icon-cursor' /></Link>
                         {
                             isLoggedIn?<FaRegUser className='me-3 icon-cursor'/>: <Button className='bg-light text-dark border-secondary sign-in' onClick={()=>setShowModal(true)}>Sign in</Button>
                         }
