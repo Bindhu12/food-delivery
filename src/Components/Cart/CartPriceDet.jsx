@@ -2,6 +2,7 @@ import React from 'react';
 import './Cart.css';
 import { useSelector } from 'react-redux';
 
+
 function CartPriceDet() {
     const foodPrice = useSelector(state => state.foodVarieties.totalPrice);
     const deliveryFee = 5;
