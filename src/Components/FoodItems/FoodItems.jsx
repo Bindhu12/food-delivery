@@ -83,7 +83,7 @@ function FoodItems({ menu }) {
                     <Card.Body className='p-2'>
                       <h5>{foodItem.name}</h5>
                       <p>{foodItem.description}</p>
-                      <Card.Text style={{ color: 'tomato' }}>${foodItem.price}</Card.Text>
+                      <Card.Text style={{ color: 'tomato' }}>&#8377;{foodItem.price}</Card.Text>
                     </Card.Body>
 
                   </Card>

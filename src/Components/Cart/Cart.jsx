@@ -42,9 +42,9 @@ function Cart() {
                 return <tr>
                   <td><img src={item.image} className='cart-img' alt='cartItem'/></td>
                   <td>{item.name}</td>
-                  <td>${item.price}</td>
+                  <td>&#8377;{item.price}</td>
                   <td>{item.quantity}</td>
-                  <td>${item.price * item.quantity}</td>
+                  <td>&#8377;{item.price * item.quantity}</td>
                   <td><FaWindowClose color='red' className='cart-remove' onClick={()=>handleRemove(index)}/></td>
                 </tr>
               })

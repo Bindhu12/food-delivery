@@ -11,17 +11,17 @@ function CartPriceDet() {
             <h4>Card Total</h4>
             <div className='d-flex justify-content-between mb-0 mt-3'>
                 <p>Subtotal</p>
-                <p>${foodPrice}</p>
+                <p>&#8377;{foodPrice}</p>
             </div>
             <hr className='mt-0 mb-1' />
             <div className='d-flex justify-content-between'>
                 <p>Delivery Fee</p>
-                <p>${deliveryFee}</p>
+                <p>&#8377;{deliveryFee}</p>
             </div>
             <hr className='mt-0 mb-1' />
             <div className='d-flex justify-content-between'>
                 <p>Total</p>
-                <p>${foodPrice + deliveryFee}</p>
+                <p>&#8377;{foodPrice + deliveryFee}</p>
             </div>
             <hr className='mt-0 mb-1' />
         </div>
